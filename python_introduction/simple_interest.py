@@ -1,7 +1,7 @@
 
-principal = 1000 #initial investment
-rate = 0.005 #annual rate
-time = 3 #time in years
+principal = 1000 
+rate = 0.005 
+time = 3 
 
 interest = principal * rate * time
 
