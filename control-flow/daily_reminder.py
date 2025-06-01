@@ -6,14 +6,14 @@ reminder = f"Task: '{task}' is marked as '{priority}' priority."
 
 match priority:
     case "high":
-        reminder += " Please focus on this task first."
+        reminder = f"Reminder: '{task}' is a high priority task"
     case "medium":
-        reminder += " Attend to this after your high-priority tasks."
+        reminder = f"Reminder: '{task}' is a medium priority task"
     case "low":
-        reminder += " You can schedule this for later."
+        reminder = f"Note: '{task}' is a low priority task. Consider completing it when you have free time."
     case _:
-        reminder += " (Unknown priority provided.)"
+        reminder = f"Note: '{task}' has an unknown priority level."
 
-if time_bound == "yes":
-    reminder += " This is a time-sensitive task that requires immediate attention today!"
+if time_bound == "yes" and priority in ["high", "medium"]:
+    reminder += " that requires immediate attention today!"
 print("\n" + reminder)
