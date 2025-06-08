@@ -2,7 +2,7 @@
 from datetime import datetime, timedelta
 
 
-current_date =datetime.now()
+display_current_datetime =datetime.now()
 
 format = current_date.strftime("%Y-%m-%d,%H:%M:%S")
 
