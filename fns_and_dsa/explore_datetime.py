@@ -13,7 +13,7 @@ calculate_future_date = int(input("Enter the number of days to add to the curren
 
 future_date = current_date + timedelta(days=10)
 
-format_fd = future_date.strftime("%Y-%m-%d")
+format_fd = future_date.strftime("%Y-%m-%d,%H:%M:%S")
 
 print("Future date:", format_fd)
 
