@@ -1,8 +1,7 @@
 
 from datetime import datetime, timedelta
 
-
-display_current_datetime =datetime.now()
+display_current_datetime = datetime.now()
 
 current_date = display_current_datetime.strftime("%Y-%m-%d,%H:%M:%S")
 
