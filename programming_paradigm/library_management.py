@@ -23,7 +23,7 @@ class Book:
         return f"{self.title} by {self.author}"
 
 
-class library:
+class Library:
     def __init__(self):
         self._books = []
 
